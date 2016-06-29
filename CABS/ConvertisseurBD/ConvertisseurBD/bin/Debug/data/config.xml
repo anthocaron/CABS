@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configs>
+  <config nom="SERVEUR" valeur="127.0.0.1" />
+  <config nom="BD" valeur="cabs" />
+  <config nom="PORT" valeur="3306" />
+  <config nom="UTILISATEUR" valeur="client" />
+  <config nom="MOT_DE_PASSE" valeur="client" />
+  <config nom="NOM_FICHIER_JOURNAL" valeur="data/journal.txt" />
+  <config nom="TELEPHONE_CAB" valeur="819-879-6333" />
+  <config nom="PRIX_REPAS_POPOTE" valeur="5" />
+  <config nom="GABARIT_FICHE" valeur="data/gabarit_fiche.dotx" />
+</configs>

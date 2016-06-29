@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{177FC42E-092D-416F-992C-8C06A0D64B50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CABS</RootNamespace>
+    <AssemblyName>CABS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icone1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v2.0\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDonnees\Champ.cs" />
+    <Compile Include="BaseDonnees\GestionnaireBD.cs" />
+    <Compile Include="BaseDonnees\InfosBD.cs" />
+    <Compile Include="BaseDonnees\LigneTable.cs" />
+    <Compile Include="BaseDonnees\Requete.cs" />
+    <Compile Include="BaseDonnees\Table.cs" />
+    <Compile Include="DataGridViewMaskedTextBox\DataGridViewMaskedTextCell.cs" />
+    <Compile Include="DataGridViewMaskedTextBox\DataGridViewMaskedTextColumn.cs" />
+    <Compile Include="DataGridViewMaskedTextBox\DataGridViewMaskedTextControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmActions.Designer.cs">
+      <DependentUpon>frmActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmActivites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmActivites.Designer.cs">
+      <DependentUpon>frmActivites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmEvaluationsFinancieres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmEvaluationsFinancieres.Designer.cs">
+      <DependentUpon>frmEvaluationsFinancieres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmFeuillesRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmFeuillesRoute.Designer.cs">
+      <DependentUpon>frmFeuillesRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmGestionDossiers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmGestionDossiers.Designer.cs">
+      <DependentUpon>frmGestionDossiers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmGestionLivraisons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmGestionLivraisons.Designer.cs">
+      <DependentUpon>frmGestionLivraisons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmGestionRoutes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmGestionRoutes.Designer.cs">
+      <DependentUpon>frmGestionRoutes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmGestionSoldes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmGestionSoldes.Designer.cs">
+      <DependentUpon>frmGestionSoldes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmListeActivites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmListeActivites.Designer.cs">
+      <DependentUpon>frmListeActivites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmRecusImpot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmRecusImpot.Designer.cs">
+      <DependentUpon>frmRecusImpot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmReunions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmReunions.Designer.cs">
+      <DependentUpon>frmReunions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionTransAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionTransAcc.Designer.cs">
+      <DependentUpon>frmInscriptionTransAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionAtelierJouets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionAtelierJouets.Designer.cs">
+      <DependentUpon>frmInscriptionAtelierJouets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionDepannageAlimentaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionDepannageAlimentaire.Designer.cs">
+      <DependentUpon>frmInscriptionDepannageAlimentaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionTransComm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionTransComm.Designer.cs">
+      <DependentUpon>frmInscriptionTransComm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionViactive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionViactive.Designer.cs">
+      <DependentUpon>frmInscriptionViactive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionClubMarche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionClubMarche.Designer.cs">
+      <DependentUpon>frmInscriptionClubMarche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionLifeline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionLifeline.Designer.cs">
+      <DependentUpon>frmInscriptionLifeline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionIndisponible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionIndisponible.Designer.cs">
+      <DependentUpon>frmInscriptionIndisponible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionPopote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionPopote.Designer.cs">
+      <DependentUpon>frmInscriptionPopote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionServicesBeneficiaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionServicesBeneficiaires.Designer.cs">
+      <DependentUpon>frmInscriptionServicesBeneficiaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmDisponibiliteServicesBenevoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmDisponibiliteServicesBenevoles.Designer.cs">
+      <DependentUpon>frmDisponibiliteServicesBenevoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionVide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionVide.Designer.cs">
+      <DependentUpon>frmInscriptionVide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmListesPersonnes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmListesPersonnes.Designer.cs">
+      <DependentUpon>frmListesPersonnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionVisitesAmitie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\Inscription\frmInscriptionVisitesAmitie.Designer.cs">
+      <DependentUpon>frmInscriptionVisitesAmitie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Outils\Excel\Classeur.cs" />
+    <Compile Include="Formulaires\Formulaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmPersonnesARejoindre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmPersonnesARejoindre.Designer.cs">
+      <DependentUpon>frmPersonnesARejoindre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmFichesPersonnes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmFichesPersonnes.Designer.cs">
+      <DependentUpon>frmFichesPersonnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Outils\Excel\Feuille.cs" />
+    <Compile Include="Outils\Excel\Tableau.cs" />
+    <Compile Include="Outils\frmSelectionTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Outils\frmSelectionTable.Designer.cs">
+      <DependentUpon>frmSelectionTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Outils\Global.cs" />
+    <Compile Include="Outils\GrilleTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Outils\GrilleTable.Designer.cs">
+      <DependentUpon>GrilleTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Outils\Menu.cs" />
+    <Compile Include="Outils\OutilsForms.cs" />
+    <Compile Include="Outils\Journal.cs" />
+    <Compile Include="Outils\Page.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Outils\Section.cs" />
+    <Compile Include="Outils\Word\Gabarit.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataGridViewMaskedTextBox\ReferencedDescriptionAttribute.cs" />
+    <EmbeddedResource Include="Formulaires\Formulaire.resx">
+      <DependentUpon>Formulaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmActions.resx">
+      <DependentUpon>frmActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmActivites.resx">
+      <DependentUpon>frmActivites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmEvaluationsFinancieres.resx">
+      <DependentUpon>frmEvaluationsFinancieres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmFeuillesRoute.resx">
+      <DependentUpon>frmFeuillesRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmGestionDossiers.resx">
+      <DependentUpon>frmGestionDossiers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmGestionLivraisons.resx">
+      <DependentUpon>frmGestionLivraisons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmGestionRoutes.resx">
+      <DependentUpon>frmGestionRoutes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmGestionSoldes.resx">
+      <DependentUpon>frmGestionSoldes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmListeActivites.resx">
+      <DependentUpon>frmListeActivites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmRecusImpot.resx">
+      <DependentUpon>frmRecusImpot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmReunions.resx">
+      <DependentUpon>frmReunions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmInscriptionTransAcc.resx">
+      <DependentUpon>frmInscriptionTransAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmInscriptionAtelierJouets.resx">
+      <DependentUpon>frmInscriptionAtelierJouets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmInscriptionDepannageAlimentaire.resx">
+      <DependentUpon>frmInscriptionDepannageAlimentaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmInscriptionTransComm.resx">
+      <DependentUpon>frmInscriptionTransComm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmInscriptionViactive.resx">
+      <DependentUpon>frmInscriptionViactive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmInscriptionClubMarche.resx">
+      <DependentUpon>frmInscriptionClubMarche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmInscriptionLifeline.resx">
+      <DependentUpon>frmInscriptionLifeline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmDisponibiliteServicesBenevoles.resx">
+      <DependentUpon>frmDisponibiliteServicesBenevoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmInscriptionIndisponible.resx">
+      <DependentUpon>frmInscriptionIndisponible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmInscriptionPopote.resx">
+      <DependentUpon>frmInscriptionPopote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmInscriptionServicesBeneficiaires.resx">
+      <DependentUpon>frmInscriptionServicesBeneficiaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmInscriptionVide.resx">
+      <DependentUpon>frmInscriptionVide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmListesPersonnes.resx">
+      <DependentUpon>frmListesPersonnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmPersonnesARejoindre.resx">
+      <DependentUpon>frmPersonnesARejoindre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmFichesPersonnes.resx">
+      <DependentUpon>frmFichesPersonnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\Inscription\frmInscriptionVisitesAmitie.resx">
+      <DependentUpon>frmInscriptionVisitesAmitie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Outils\frmSelectionTable.resx">
+      <DependentUpon>frmSelectionTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Outils\GrilleTable.resx">
+      <DependentUpon>GrilleTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Outils\Page.resx">
+      <DependentUpon>Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="data\gabarit_fiche.dotx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\gabarit_recu_popote.dotx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\formulairesInscription.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="icone1.ico" />
+    <Content Include="data\journal.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\menu.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\32px-Magnifying_glass_icon.png" />
+    <None Include="Resources\16px-Magnifying_glass_icon.png" />
+    <Content Include="mysqldump.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\tables.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MonthCalendarControl\MonthCalendarControl.csproj">
+      <Project>{19BBA547-3515-4E3E-ADB7-E9895171A43E}</Project>
+      <Name>MonthCalendarControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

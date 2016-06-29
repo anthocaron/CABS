@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <section nom="Services">
+    <section nom="Dépannage alimentaire La Manne">
+      <page nom="Évaluations financières" nomFormulaire="CABS.Formulaires.frmEvaluationsFinancieres" />
+    </section>
+    <section nom="Popote roulante">
+      <page nom="Gestion des livraisons" nomFormulaire="CABS.Formulaires.frmGestionLivraisons" />
+      <page nom="Gestion des soldes" nomFormulaire="CABS.Formulaires.frmGestionSoldes" />
+      <page nom="Gestion des routes" nomFormulaire="CABS.Formulaires.frmGestionRoutes" />
+      <page nom="Feuilles de route" nomFormulaire="CABS.Formulaires.frmFeuillesRoute" />
+    </section>
+  </section>
+  <section nom="Bénéficiaires/Bénévoles/Employés">
+    <section nom="Informations gérérales">
+      <page nom="Fiches des personnes" nomFormulaire="CABS.Formulaires.frmFichesPersonnes" />
+      <page nom="Personnes à rejoindre" nomFormulaire="CABS.Formulaires.frmPersonnesARejoindre" />
+      <page nom="Gestion des dossiers" nomFormulaire="CABS.Formulaires.frmGestionDossiers" />
+    </section>
+    <section nom="Inscription des services">
+      <page nom="Inscription des bénéficiaires" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionServicesBeneficiaires" />
+      <page nom="Disponibilité des bénévoles" nomFormulaire="CABS.Formulaires.Inscription.frmDisponibiliteServicesBenevoles" />
+    </section>
+    <section nom="Listes">
+      <page nom="Listes" nomFormulaire="CABS.Formulaires.frmListesPersonnes" />
+    </section>
+  </section>
+  <section nom="Activités">
+    <section nom="Gestion des activités">
+      <page nom="Activités " nomFormulaire="CABS.Formulaires.frmActivites" />
+      <page nom="Actions" nomFormulaire="CABS.Formulaires.frmActions" />
+      <page nom="Réunions" nomFormulaire="CABS.Formulaires.frmReunions" />
+      <page nom="Listes" nomFormulaire="CABS.Formulaires.frmListeActivites" />
+    </section>
+  </section>
+</menu>

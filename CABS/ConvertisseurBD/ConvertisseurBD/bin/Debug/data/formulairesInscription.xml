@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<services>
+  <service nom="Aide à la marche" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionVide" />
+  <service nom="Atelier de jouets" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionAtelierJouets" />
+  <service nom="Club de marche" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionClubMarche" />
+  <service nom="Comptoir familial" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionVide" />
+  <service nom="Dépannage alimentaire La Manne" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionDepannageAlimentaire" />
+  <service nom="Menus travaux" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionIndisponible" />
+  <service nom="Popote roulante" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionPopote" />
+  <service nom="Programme Pair" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionVide" />
+  <service nom="Rencontres d'amitié" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionIndisponible" />
+  <service nom="Télésurveillance Philips Lifeline" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionLifeline" />
+  <service nom="Transport accompagnement" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionTransAcc" />
+  <service nom="Transport communautaire" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionTransComm" />
+  <service nom="Viactive" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionViactive" />
+  <service nom="Visites d'amitié" nomFormulaire="CABS.Formulaires.Inscription.frmInscriptionVisitesAmitie" />
+</services>
